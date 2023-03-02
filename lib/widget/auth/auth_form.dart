@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../button/button.dart';
+import '../buttons/main_button.dart';
 
 class AuthForm extends StatelessWidget {
   final TextEditingController controllerEmail;
@@ -43,8 +43,8 @@ class AuthForm extends StatelessWidget {
                     text: 'Login',
                     onPressed: () async {
                       onPressed();
-                    }
-                  )
+                    },
+                  ),
                 ],
               ),
             ),

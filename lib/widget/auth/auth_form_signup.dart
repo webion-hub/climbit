@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../button/button.dart';
+import '../buttons/main_button.dart';
 
 class AuthFormSignUp extends StatelessWidget {
   final TextEditingController controllerEmail;
@@ -47,10 +47,11 @@ class AuthFormSignUp extends StatelessWidget {
                   ),
                   const SizedBox(height: 12),
                   MainButton(
-                      text: 'Registrati',
-                      onPressed: () async {
-                        onPressed();
-                      })
+                    text: 'Registrati',
+                    onPressed: () async {
+                      onPressed();
+                    },
+                  ),
                 ],
               ),
             ),
