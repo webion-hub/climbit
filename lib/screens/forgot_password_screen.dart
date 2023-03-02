@@ -1,5 +1,5 @@
 import 'package:climbit/utils/utils.dart';
-import 'package:climbit/widget/button/button.dart';
+import 'package:climbit/widget/buttons/main_button.dart';
 import 'package:climbit/widget/loading/loading_wheel.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
