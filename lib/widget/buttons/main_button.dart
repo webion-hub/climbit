@@ -5,8 +5,12 @@ class MainButton extends StatelessWidget {
   final VoidCallback onPressed;
   final FocusNode? focusNode;
 
-  const MainButton(
-      {super.key, required this.text, required this.onPressed, this.focusNode});
+  const MainButton({
+    super.key, 
+    required this.text, 
+    required this.onPressed, 
+    this.focusNode
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -30,8 +30,7 @@ class AuthForm extends StatelessWidget {
                   TextFormField(
                     controller: controllerEmail,
                     keyboardType: TextInputType.emailAddress,
-                    decoration:
-                        const InputDecoration(labelText: 'Indirizzo email'),
+                    decoration: const InputDecoration(labelText: 'Indirizzo email'),
                   ),
                   TextFormField(
                     controller: controllerPSW,

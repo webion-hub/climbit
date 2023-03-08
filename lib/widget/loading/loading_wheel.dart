@@ -5,8 +5,14 @@ class LoadingWheel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: CircularProgressIndicator(),
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: const [
+        Center(
+          child: CircularProgressIndicator(),
+        ),
+      ],
     );
   }
 }

@@ -6,13 +6,16 @@ class AuthFormSignUp extends StatelessWidget {
   final TextEditingController controllerEmail;
   final TextEditingController controllerPSW;
   final TextEditingController controllerConfirmPSW;
+  final TextEditingController controllerUsername;
   final Function() onPressed;
 
   const AuthFormSignUp({
     super.key,
     required this.controllerEmail,
     required this.controllerPSW,
-    required this.onPressed, required this.controllerConfirmPSW,
+    required this.onPressed, 
+    required this.controllerConfirmPSW, 
+    required this.controllerUsername,
   });
 
   @override
@@ -29,10 +32,14 @@ class AuthFormSignUp extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   TextFormField(
+                    controller: controllerUsername,
+                    keyboardType: TextInputType.name,
+                    decoration: const InputDecoration(labelText: 'Username'),
+                  ),
+                  TextFormField(
                     controller: controllerEmail,
                     keyboardType: TextInputType.emailAddress,
-                    decoration:
-                        const InputDecoration(labelText: 'Indirizzo email'),
+                    decoration: const InputDecoration(labelText: 'Indirizzo email'),
                   ),
                   TextFormField(
                     controller: controllerPSW,
@@ -41,8 +48,7 @@ class AuthFormSignUp extends StatelessWidget {
                   ),
                   TextFormField(
                     controller: controllerConfirmPSW,
-                    decoration:
-                        const InputDecoration(labelText: 'Conferma password'),
+                    decoration: const InputDecoration(labelText: 'Conferma password'),
                     obscureText: true,
                   ),
                   const SizedBox(height: 12),

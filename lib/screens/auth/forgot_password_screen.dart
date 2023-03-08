@@ -12,13 +12,13 @@ class ForgotPasswordScreen extends StatefulWidget {
 }
 
 class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
+  final _emailcontroller = TextEditingController(text: '');
+  
   @override
   void dispose() {
     super.dispose();
     _emailcontroller.dispose();
   }
-
-  final _emailcontroller = TextEditingController(text: '');
 
   Future resetPassword() async {
     const LoadingWheel();
