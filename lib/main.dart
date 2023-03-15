@@ -25,6 +25,12 @@ class MyApp extends StatelessWidget {
       scaffoldMessengerKey: Utils.messangerKey,
       theme: ThemeData(
         primarySwatch: Colors.green,
+        textTheme: Theme.of(context).textTheme.copyWith(
+          headlineLarge: const TextStyle(
+            fontWeight: FontWeight.w700,
+            color: Colors.black87,
+          )
+        )
       ),
       home: Scaffold(
         body: StreamBuilder<User?>(

@@ -3,16 +3,16 @@ import 'package:climbit/services/google_auth.dart';
 import 'package:climbit/widget/buttons/main_button.dart';
 import 'package:flutter/material.dart';
 
-class UsernameChoice extends StatefulWidget {
-  const UsernameChoice({super.key});
+class UsernameChoiceScreen extends StatefulWidget {
+  const UsernameChoiceScreen({super.key});
   
   
   
   @override
-  State<UsernameChoice> createState() => _UsernameChoiceState();
+  State<UsernameChoiceScreen> createState() => _UsernameChoiceScreenState();
 }
 
-class _UsernameChoiceState extends State<UsernameChoice> {
+class _UsernameChoiceScreenState extends State<UsernameChoiceScreen> {
 
   final TextEditingController usernamecontroller = TextEditingController(text: '');
 

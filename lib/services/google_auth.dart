@@ -1,5 +1,5 @@
+import 'package:climbit/screens/auth/username_choice_screen.dart';
 import 'package:climbit/screens/homepage.dart';
-import 'package:climbit/screens/auth/username_choice.dart';
 import 'package:climbit/services/user_service.dart';
 import 'package:climbit/utils/constants.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -28,7 +28,7 @@ class GoogleAuth {
     if (doc.exists) {
       page = const HomePage();
     } else {
-      page = const UsernameChoice();
+      page = const UsernameChoiceScreen();
     }
     return FirebaseAuth.instance.signInWithCredential(credential).then(
         (value) => Navigator.of(context)

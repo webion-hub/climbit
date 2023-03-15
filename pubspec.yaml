@@ -49,6 +49,9 @@ dependencies:
   geoflutterfire2: ^2.3.14
   google_maps_flutter: ^2.2.5
   location: ^4.4.0
+  intl: ^0.17.0
+  syncfusion_flutter_charts: ^20.4.53
+  carousel_slider: ^4.2.1
   
 dev_dependencies:
   flutter_test:

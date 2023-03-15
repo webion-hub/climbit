@@ -1,11 +1,11 @@
 import 'package:climbit/screens/homepage.dart';
 import 'package:climbit/screens/profile/profile_screen.dart';
-import 'package:climbit/screens/saved_screen.dart';
+import 'package:climbit/screens/gyms_screen.dart';
 import 'package:climbit/utils/utils.dart';
 import 'package:flutter/material.dart';
 
 class PageCore extends StatefulWidget {
-  const PageCore({super.key});
+  const PageCore({super.key,});
 
   @override
   State<PageCore> createState() => _PageCoreState();
@@ -16,7 +16,7 @@ class _PageCoreState extends State<PageCore> {
 
   static final List<Widget> _widgetOptions = <Widget>[
     const HomePage(),
-    const SavedScreen(),
+    const GymsScreen(),
     ProfileScreen(profileId: Utils.currentUid()),
   ];
 
@@ -35,17 +35,17 @@ class _PageCoreState extends State<PageCore> {
         showUnselectedLabels: false,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-              label: 'Home',
-              icon: Icon(Icons.search),
-            ),
-            BottomNavigationBarItem(
-              label: 'Saved',
-              icon: Icon(Icons.bookmark_sharp),
-            ),
-            BottomNavigationBarItem(
-              label: 'Profile',
-              icon: Icon(Icons.person),
-            ),
+            label: 'Home',
+            icon: Icon(Icons.search),
+          ),
+          BottomNavigationBarItem(
+            label: 'Saved',
+            icon: Icon(Icons.bookmark_sharp),
+          ),
+          BottomNavigationBarItem(
+            label: 'Profile',
+            icon: Icon(Icons.person),
+          ),
         ],
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
